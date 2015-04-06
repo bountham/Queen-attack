@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Queens Attack</title>
+</head>
+<body>
+    <div class ="container">
+        <h1>Queen Attacks</h1>
+
+        <form id="queen-attack">
+            <div class="form-group">
+                <label for="queen_row">Enter the row  where the queen is</label>
+                <input id="queen_row" type="text" pattern="[1-8]{1}">
+            </div>
+            <div class="form-group">
+                <label for="queen_col">Enter the column  where the queen is</label>
+                <input id="queen_col" type="text" pattern="[1-8]{1}">
+            </div>
+            <div class="form-group">
+                <label for="attack_row">Enter an X coordinate to see if the queen can attack there.</label>
+                <input id="attack_row" type="text" pattern="[1-8]{1}">
+            </div>
+            <div class="form-group">
+                <label for="attack_col">Enter a Y coordinate to see if the queen can attack there.</label>
+                <input id="attack_col" type="text" pattern="[1-8]{1}">
+            </div>
+
+            <button type="submit" class="btn">Attack!</button>
+        </form>
+
+     <div id="result">
+         <h3>The position is <span id="not" class="text-danger"></span> in range of the queen.</h3>
+         </div>
+         <div id ="error">
+             <h3>This move is NOT POSSIBLE</h3>
+         </div>
+    </div><!--ending container-->
+
+</body>
+</html>
